@@ -10,6 +10,7 @@ class k_modulo(models.Model):
      name = fields.Char()
      value = fields.Integer()
      value2 = fields.Float(compute="_value_pc", store=True)
+     dxyz = fields.Text()
      description = fields.Text()
 
      @api.depends('value')
